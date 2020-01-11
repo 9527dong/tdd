@@ -12,6 +12,14 @@ public class MulitiCurrencyMoneyTest {
 
         assertEquals(new Dollar(15), five.times(3));
     }
+    @Test
+    public void testFrancMultiplication() {
+        Franc five = new Franc(5);
+
+        assertEquals(new Franc(10), five.times(2));
+
+        assertEquals(new Franc(15), five.times(3));
+    }
 
     /**
      * 为什么要写两个测试用例，使用的是三角法（Triangulation）。

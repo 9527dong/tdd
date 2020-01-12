@@ -181,5 +181,26 @@ todoList:
 通过引入工厂方法，消除测试代码与具体子类存在的耦合，为下一步消除子类做好准备。
 引入了新的待办事项
 
-- [ ] 删除testFrancMultiplication
+- [ ] 删除testFrancMultiplication？
 
+## 第九章 我们所处的时代
+
+todoList:
+- [ ] 当瑞士法郎与美元的兑换率为2:1的时候，5美元+10瑞士法郎=10美元
+- [x] 5美元*2=10美元
+- [x] 将"amount"定义为私有
+- [x] Dollar类有副作用吗？在为Dollar对象施加一个操作后，Dollar对象发生了改变。
+- [ ] 钱数必须为整数？
+- [x] 实现equals函数
+- [ ] 实现hashcode函数
+- [ ] 与空对象判等
+- [ ] 与非同类对象判等
+- [x] 5瑞士法郎*2=10瑞士法郎
+- [ ] 美元Dollar、瑞士法郎Franc之间的重复设计
+- [x] 普通判等
+- [ ] 普通相乘
+- [x] 比较法郎对象与美元对象
+- [x] 货币？
+- [ ] 删除testFrancMultiplication？
+
+为times()的实现上移并消除子类做准备工作，引入了currency概念。

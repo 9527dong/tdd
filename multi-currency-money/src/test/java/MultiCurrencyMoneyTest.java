@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MulitiCurrencyMoneyTest {
+public class MultiCurrencyMoneyTest {
 
     @Test
     public void testMultiplication() {
@@ -29,8 +29,11 @@ public class MulitiCurrencyMoneyTest {
     @Test
     public void testEquality() {
         assertEquals(new Dollar(5), new Dollar(5));
-
         assertNotEquals(new Dollar(6), new Dollar(5));
+
+        //添加法郎判等的测试用例
+        assertEquals(new Franc(5), new Franc(5));
+        assertNotEquals(new Franc(6), new Franc(5));
 
     }
 }

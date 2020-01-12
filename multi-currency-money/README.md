@@ -295,4 +295,15 @@ todoList:
 - [x] 带换算的Reduce Money
 - [x] Reduce(Bank,String)
 
+## 第十五章 混合货币
+
+todoList:
+- [x] 当瑞士法郎与美元的兑换率为2:1的时候，5美元+10瑞士法郎=10美元
+- [x] 5美元+5美元=10美元
+- [ ] 从5美元+5美元返回一个Money对象
+- [x] Bank.reduce(Money)
+- [x] 带换算的Reduce Money
+- [x] Reduce(Bank,String)
+- [ ] Sum.plus
+- [ ] Expression.times
 

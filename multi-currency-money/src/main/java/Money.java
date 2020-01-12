@@ -1,4 +1,4 @@
-public abstract class Money {
+public class Money {
     protected int amount;
 
     protected String currency;
@@ -19,13 +19,19 @@ public abstract class Money {
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
-        return money.amount == this.amount && getClass() == money.getClass();
+        return money.amount == this.amount && currency().equals(money.currency);
     }
 
     public String currency() {
         return currency;
     }
 
-    public abstract Money times(int multiplier);
+    public Money times(int multiplier){
+        return new Money(amount * multiplier,currency);
+    }
 
+    @Override
+    public String toString() {
+        return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
+    }
 }

@@ -35,5 +35,8 @@ public class MultiCurrencyMoneyTest {
         assertEquals(new Franc(5), new Franc(5));
         assertNotEquals(new Franc(6), new Franc(5));
 
+        //将一个困扰的问题转化为测试用例
+        assertNotEquals(new Franc(5), new Dollar(5));
+
     }
 }
